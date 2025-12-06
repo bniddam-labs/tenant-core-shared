@@ -1,0 +1,66 @@
+{
+  "name": "@bniddam-labs/tenant-core-shared",
+  "version": "0.1.0",
+  "description": "Framework-agnostic multi-tenant types, utilities and business logic for SaaS applications",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "clean": "rm -rf dist",
+    "test": "vitest",
+    "lint": "biome lint .",
+    "lint:fix": "biome lint --write .",
+    "format": "biome format --write .",
+    "check": "biome check . && pnpm run typecheck",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "pnpm run build"
+  },
+  "keywords": [
+    "multi-tenant",
+    "saas",
+    "organization",
+    "rbac",
+    "permissions",
+    "framework-agnostic",
+    "typescript"
+  ],
+  "author": "bniddam",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bniddam-labs/tenant-core-shared.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bniddam-labs/tenant-core-shared/issues"
+  },
+  "homepage": "https://github.com/bniddam-labs/tenant-core-shared#readme",
+  "files": [
+    "src",
+    "dist",
+    "README.md",
+    "LICENSE",
+    "*.json",
+    "*.ts"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "2.3.2",
+    "@types/node": "^22.10.2",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.3",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  }
+}
