@@ -1,6 +1,6 @@
 {
   "name": "@bniddam-labs/tenant-core-shared",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Framework-agnostic multi-tenant types, utilities and business logic for SaaS applications",
   "main": "dist/index.js",
   "module": "dist/index.mjs",
@@ -22,6 +22,7 @@
     "format": "biome format --write .",
     "check": "biome check . && pnpm run typecheck",
     "typecheck": "tsc --noEmit",
+    "postinstall": "pnpm run build",
     "prepublishOnly": "pnpm run build"
   },
   "keywords": [
