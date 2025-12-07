@@ -3,7 +3,7 @@
  */
 
 // Export enums
-export * from './enums';
+export * from './enums.js';
 
 // Export interfaces
-export * from './interfaces';
+export * from './interfaces.js';

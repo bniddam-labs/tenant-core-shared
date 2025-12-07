@@ -1,4 +1,4 @@
-import type { OrganizationPermission, SystemRoleName } from './enums';
+import type { OrganizationPermission, SystemRoleName } from './enums.js';
 
 /**
  * Organization settings interface

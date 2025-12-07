@@ -3,10 +3,10 @@
  */
 
 // Permission utilities
-export * from './permissions';
+export * from './permissions.js';
 
 // Role utilities
-export * from './roles';
+export * from './roles.js';
 
 // Validation utilities
-export * from './validators';
+export * from './validators.js';

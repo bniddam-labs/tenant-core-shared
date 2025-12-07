@@ -1,5 +1,5 @@
 node_modules/
-dist/
+# dist/ - Committed for GitHub installs
 coverage/
 .DS_Store
 *.log

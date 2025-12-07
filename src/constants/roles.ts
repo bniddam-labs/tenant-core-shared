@@ -1,6 +1,6 @@
-import { type RoleHierarchy } from '../types/interfaces';
-import { SystemRoleName } from '../types/enums';
-import { DEFAULT_PERMISSIONS_BY_ROLE } from './permissions';
+import { type RoleHierarchy } from '../types/interfaces.js';
+import { SystemRoleName } from '../types/enums.js';
+import { DEFAULT_PERMISSIONS_BY_ROLE } from './permissions.js';
 
 /**
  * Role hierarchy configuration

@@ -3,10 +3,10 @@
  */
 
 // Permission constants
-export * from './permissions';
+export * from './permissions.js';
 
 // Role constants
-export * from './roles';
+export * from './roles.js';
 
 // Organization constants
-export * from './organization';
+export * from './organization.js';

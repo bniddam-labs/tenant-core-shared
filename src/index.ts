@@ -16,10 +16,10 @@
  */
 
 // Export types
-export * from './types';
+export * from './types/index.js';
 
 // Export utilities
-export * from './utils';
+export * from './utils/index.js';
 
 // Export constants
-export * from './constants';
+export * from './constants/index.js';
